@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <style>
+        .show {
+            background-color: bisque;
+        }
+
+        .box {
+            display: flex;
+            height: 50px;
+            width: 50px;
+            border: 2px solid gray;
+            color: black;
+            background-color: rosybrown;
+            text-align: center;
+            box-shadow: 5px 5px grey;
+            font-size: 25px;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box-clicked {
+            display: flex;
+            background-color: lightsteelblue;
+            border: 2px solid blanchedalmond;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flag-div {
+            display: block;
+
+        }
+
+        .board {
+            height: 600px;
+            width: 560px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+
+        .f1 {
+            color: blue;
+            text-align: center;
+        }
+
+        .f2 {
+            color: darkgreen;
+            text-align: center;
+        }
+
+        .f3 {
+            color: brown;
+            text-align: center;
+        }
+
+        .f4 {
+            color: darkgoldenrod;
+            text-align: center;
+        }
+
+        .f5 {
+            color: darkorchid;
+            text-align: center;
+        }
+
+        .f6 {
+            color: deeppink;
+            text-align: center;
+        }
+
+        .f7 {
+            color: yellow;
+            text-align: center;
+        }
+
+        .f8 {
+            color: violet;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: salmon;
+            text-shadow: 4px 4px beige;
+            font-size: 60px;
+            font-weight: bolder;
+        }
+
+        .bttn {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .reset,
+        .quit,
+        .play {
+            background-color: midnightblue;
+            color: whitesmoke;
+        }
+
+        .bttn button {
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 3px 3px black;
+            font-size: 25px;
+        }
+
+        .board-hide {
+            display: none;
+        }
+
+        .lost {
+            display: none
+        }
+
+        .showLost {
+            text-align: center;
+            color: mediumvioletred;
+            font-weight: bolder;
+            font-size: 40px;
+
+        }
+
+        .playHide {
+            display: none;
+        }
+
+        .bttn-hide {
+            display: none;
+        }
+
+        .play {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            font-size: 30px;
+            margin-top: 100px;
+            box-shadow: 3px 3px black;
+
+        }
+
+        .won {
+            display: none;
+        }
+
+        .wonShow {
+            text-align: center;
+            color: mediumvioletred;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MINESWEEPER</h1>
+    <p class="lost">You Lost Try Again</p>
+    <p class="won">You Won</p>
+    <button class="play">Play</button>
+    <div class="board-hide">
+    </div>
+    <div class="bttn-hide">
+        <button class="flag">🚩 10</button>
+        <button class="reset">Reset</button>
+    </div>
+    <script src="minesweeper.js"></script>
+</body>
+
+</html>
